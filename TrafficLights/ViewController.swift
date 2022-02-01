@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
     
+    private var status = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         button.layer.cornerRadius = 10
@@ -28,7 +30,21 @@ class ViewController: UIViewController {
 
     
     @IBAction func buttenClick(_ sender: Any) {
-        redLight.alpha = 1
+        if status == 0 {
+            greenLight.alpha = 0.2
+            redLight.alpha = 1
+            button.setTitle("Next", for: .normal)
+            status = 1
+        } else if status == 1 {
+            redLight.alpha = 0.2
+            yellowLight.alpha = 1
+            status = 2
+        } else if status == 2 {
+            yellowLight.alpha = 0.2
+            greenLight.alpha = 1
+            status = 0
+        }
+        
     }
     
     
