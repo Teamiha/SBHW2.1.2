@@ -18,9 +18,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         button.layer.cornerRadius = 10
     }
-
-    @IBAction func buttonClick(_ sender: Any) {
+    
+    override func viewWillLayoutSubviews(){
+        redLight.layer.cornerRadius = redLight.frame.width / 2
+        yellowLight.layer.cornerRadius = redLight.frame.width / 2
+        greenLight.layer.cornerRadius = redLight.frame.width / 2
+        
     }
+
+    
+    @IBAction func buttenClick(_ sender: Any) {
+        redLight.alpha = 1
+    }
+    
     
 }
 

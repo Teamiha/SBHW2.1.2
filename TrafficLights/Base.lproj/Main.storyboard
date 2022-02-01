@@ -17,21 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-ot-CI4" userLabel="Red Light">
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ha-ot-CI4" userLabel="Red Light">
                                 <rect key="frame" x="143" y="79" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6Ha-ot-CI4" secondAttribute="height" multiplier="1:1" id="hnt-Ry-eTK"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hi-IV-cSW" userLabel="Yelow Light">
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hi-IV-cSW" userLabel="Yelow Light">
                                 <rect key="frame" x="143" y="241" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Hi-IV-cSW" secondAttribute="height" multiplier="1:1" id="VkR-d6-SKe"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WC-7d-qra" userLabel="Green Light">
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WC-7d-qra" userLabel="Green Light">
                                 <rect key="frame" x="143" y="409" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -45,7 +45,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbd-jb-I4s"/>
+                                    <action selector="buttenClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFW-gQ-X20"/>
                                 </connections>
                             </button>
                         </subviews>
