@@ -25,15 +25,16 @@ class ViewController: UIViewController {
         redLight.layer.cornerRadius = redLight.frame.width / 2
         yellowLight.layer.cornerRadius = redLight.frame.width / 2
         greenLight.layer.cornerRadius = redLight.frame.width / 2
-        
+
     }
 
     
     @IBAction func buttenClick(_ sender: Any) {
+        button.setTitle("Next", for: .normal)
+        
         if status == 0 {
             greenLight.alpha = 0.2
             redLight.alpha = 1
-            button.setTitle("Next", for: .normal)
             status = 1
         } else if status == 1 {
             redLight.alpha = 0.2
